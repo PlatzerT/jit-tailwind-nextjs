@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { useState } from 'react';
 
-export default function Home() {
+export default function Home({ dog }) {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
 	const [isSubmitted, setIsSubmitted] = useState(false);
